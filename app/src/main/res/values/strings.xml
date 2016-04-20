@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyVibrate</string>
+    <string name="button_setTime">设置提醒时间间隔</string>
+    <string name="your_time_space">提醒间隔 : </string>
+    <string name="your_time_left">距离闹钟还有 : </string>
+    <string name="button_setVibrate">设置震动</string>
+    <string name="button_num_picker">设置完成</string>
+</resources>
