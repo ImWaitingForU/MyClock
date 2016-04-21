@@ -14,12 +14,10 @@
 
     <Button
         android:id="@+id/btn_setTime"
+        style="@style/main_button_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/selector_button_timespace"
-        android:text="@string/button_setTime"
-        android:textColor="@color/colorButton"
-        android:textSize="20sp"/>
+        android:text="@string/button_setTime"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,84 +27,92 @@
         android:paddingTop="20dp">
 
         <TextView
+            style="@style/main_tv_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:text="@string/your_time_space"
-            android:textColor="@color/colorButton"
-            android:textSize="20sp"/>
+            android:text="@string/your_time_space"/>
 
         <TextView
-            android:id="@+id/tv"
+            android:id="@+id/tv_show_sec"
+            style="@style/main_tv_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:paddingLeft="10dp"
-            android:text="小时"
-            android:textColor="@color/colorButton"
-            android:textSize="20sp"/>
+            android:text="秒"/>
 
         <TextView
-            android:id="@+id/tv_timeSpace"
+            android:id="@+id/tv_timeSpace_sec"
+            style="@style/main_tv_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/tv"
-            android:text="2"
-            android:textColor="@color/colorButton"
-            android:textSize="20sp"/>
+            android:layout_toLeftOf="@id/tv_show_sec"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/tv_show_min"
+            style="@style/main_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_timeSpace_sec"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="分"/>
+
+        <TextView
+            android:id="@+id/tv_timeSpace_min"
+            style="@style/main_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_show_min"
+            android:text="0"/>
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/layout_time_left"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:paddingBottom="20dp"
         android:paddingTop="20dp">
 
         <TextView
+            style="@style/main_tv_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/your_time_left"
-            android:textColor="@color/colorButton"
-            android:textSize="20sp"/>
+            android:text="@string/your_time_left"/>
 
         <TextView
             android:id="@+id/tv2"
+            style="@style/main_tv_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:paddingLeft="10dp"
-            android:text="小时"
-            android:textColor="@color/colorButton"
-            android:textSize="20sp"/>
+            android:text="秒"/>
 
         <TextView
             android:id="@+id/tv_timeLeft"
+            style="@style/main_tv_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/tv2"
-            android:text="2"
-            android:textColor="@color/colorButton"
-            android:textSize="20sp"/>
+            android:text="0"/>
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btn_setVibrate"
+        android:id="@+id/btn_setVibrateTime"
+        style="@style/main_button_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/selector_button_timespace"
-        android:text="@string/button_setVibrate"
-        android:textColor="@color/colorButton"
-        android:textSize="20sp"/>
+        android:text="@string/button_setVibrate"/>
 
     <Button
-        android:id="@+id/btn_stopVibrate"
+        android:layout_marginTop="100dp"
+        android:id="@+id/btn_cancelAlock"
+        style="@style/main_button_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/selector_button_timespace"
-        android:text="停止震动"
-        android:textColor="@color/colorButton"
-        android:textSize="20sp"/>
+        android:text="@string/button_cancel_alock"/>
+
 
 </LinearLayout>

@@ -5,4 +5,5 @@
     <string name="your_time_left">距离闹钟还有 : </string>
     <string name="button_setVibrate">设置震动</string>
     <string name="button_num_picker">设置完成</string>
+    <string name="button_cancel_alock">取消闹钟</string>
 </resources>

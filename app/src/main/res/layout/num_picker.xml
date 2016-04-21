@@ -4,13 +4,44 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <NumberPicker
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:id="@+id/numberPicker"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:layout_height="wrap_content">
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:id="@+id/np_min"
+            android:layout_height="wrap_content">
 
-    </NumberPicker>
+        </NumberPicker>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分"
+            android:padding="15dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"/>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:id="@+id/np_sec"
+            android:layout_height="wrap_content">
+
+        </NumberPicker>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="秒"
+            android:padding="15dp"
+
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/btn_finish_timeSpace"
