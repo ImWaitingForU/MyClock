@@ -1,118 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.demo.myviberate.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_setTime"
-        style="@style/main_button_style"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_setTime"/>
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.demo.myviberate.MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp">
-
-        <TextView
-            style="@style/main_tv_style"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/btn_setTime"
+            style="@style/main_button_style"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/your_time_space"/>
+            android:text="@string/button_setTime"/>
 
-        <TextView
-            android:id="@+id/tv_show_sec"
-            style="@style/main_tv_style"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:paddingLeft="10dp"
-            android:text="秒"/>
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
 
-        <TextView
-            android:id="@+id/tv_timeSpace_sec"
-            style="@style/main_tv_style"
-            android:layout_width="wrap_content"
+            <TextView
+                style="@style/main_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_time_space"/>
+
+            <TextView
+                android:id="@+id/tv_show_sec"
+                style="@style/main_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:text="秒"/>
+
+            <TextView
+                android:id="@+id/tv_timeSpace_sec"
+                style="@style/main_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_show_sec"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/tv_show_min"
+                style="@style/main_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_timeSpace_sec"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="分"/>
+
+            <TextView
+                android:id="@+id/tv_timeSpace_min"
+                style="@style/main_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_show_min"
+                android:text="0"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/layout_time_left"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/tv_show_sec"
-            android:text="0"/>
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
 
-        <TextView
-            android:id="@+id/tv_show_min"
-            style="@style/main_tv_style"
-            android:layout_width="wrap_content"
+            <TextView
+                style="@style/main_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_time_left"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/main_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:text="秒"/>
+
+            <TextView
+                android:id="@+id/tv_timeLeft"
+                style="@style/main_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv2"
+                android:text="0"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_setVibrateTime"
+            style="@style/main_button_style"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/tv_timeSpace_sec"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="分"/>
+            android:layout_marginBottom="10dp"
+            android:text="@string/button_setVibrate"/>
 
-        <TextView
-            android:id="@+id/tv_timeSpace_min"
-            style="@style/main_tv_style"
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_cancelAlock"
+            style="@style/main_button_style"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/tv_show_min"
-            android:text="0"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/layout_time_left"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp">
-
-        <TextView
-            style="@style/main_tv_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/your_time_left"/>
-
-        <TextView
-            android:id="@+id/tv2"
-            style="@style/main_tv_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:paddingLeft="10dp"
-            android:text="秒"/>
-
-        <TextView
-            android:id="@+id/tv_timeLeft"
-            style="@style/main_tv_style"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/tv2"
-            android:text="0"/>
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/btn_setVibrateTime"
-        style="@style/main_button_style"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_setVibrate"/>
-
-    <Button
-        android:layout_marginTop="100dp"
-        android:id="@+id/btn_cancelAlock"
-        style="@style/main_button_style"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_cancel_alock"/>
+            android:layout_marginTop="100dp"
+            android:text="@string/button_cancel_alock"/>
 
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

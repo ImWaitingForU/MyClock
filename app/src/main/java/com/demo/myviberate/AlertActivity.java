@@ -19,16 +19,15 @@ public class AlertActivity extends AppCompatActivity {
 
 		vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
-		Intent intent = getIntent();
-		int t1 = intent.getIntExtra("vibrateTime1", 0);
-		int t2 = intent.getIntExtra("vibrateTime2", 0);
-		int t3 = intent.getIntExtra("vibrateTime3", 0);
-		int t4 = intent.getIntExtra("vibrateTime4", 0);
+		Intent intentFromBroadcast = getIntent();
+		int getT1 = intentFromBroadcast.getIntExtra("vibrateTime1", 0);
+		int getT2 = intentFromBroadcast.getIntExtra("vibrateTime2", 0);
+		int getT3 = intentFromBroadcast.getIntExtra("vibrateTime3", 0);
+		int getT4 = intentFromBroadcast.getIntExtra("vibrateTime4", 0);
 
-        Log.d("timeget", intent.toString ());
-		Log.d("timeget", t1 + "--" + t2 + "--" + t3 + "--" + t4);
+		Log.d("intent", "闹钟接收到的震动-"+getT1 + "--" + getT2 + "--" + getT3 + "--" + getT4);
 
-		vibrator.vibrate(new long[]{t1, t2, t3, t4}, 0);
+		vibrator.vibrate(new long[]{getT1, getT2, getT3, getT4}, 0);
 
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setMessage("闹钟响啦~~")
