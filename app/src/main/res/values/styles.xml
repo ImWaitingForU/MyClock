@@ -17,6 +17,14 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <!--renameDialog-->
+    <style name="et_renameDialog">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_tv</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
     <!--主页面按钮风格-->
     <style name="main_button_style">
         <item name="android:background">@drawable/selector_button_timespace</item>

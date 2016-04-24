@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/colorPrimaryDark"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+        android:layout_marginTop="20dp"
+        style="@style/et_renameDialog"
+        android:id="@+id/et_rename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入新的名称"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        style="@style/main_button_style"
+        android:id="@+id/btn_rename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认修改"/>
+
+</LinearLayout>

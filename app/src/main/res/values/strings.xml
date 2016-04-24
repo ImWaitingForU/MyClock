@@ -1,9 +1,18 @@
 <resources>
-    <string name="app_name">MyVibrate</string>
+    <string name="app_name">震动闹钟</string>
     <string name="button_setTime">设置提醒时间间隔</string>
     <string name="your_time_space">提醒间隔 : </string>
     <string name="your_time_left">距离闹钟还有 : </string>
+    <string name="your_set_sound">当前闹铃为 : </string>
     <string name="button_setVibrate">设置震动</string>
     <string name="button_num_picker">设置完成</string>
     <string name="button_cancel_alock">取消闹钟</string>
+    <string name="button_start_alock">开始闹钟</string>
+    <string name="button_set_sound">设置闹钟铃声</string>
+
+
+    <string name="pop_rename">重命名震动</string>
+    <string name="pop_delete">删除震动</string>
+
+
 </resources>
